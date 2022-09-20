@@ -34,14 +34,15 @@ Shader "Custom/test"
 
         void surf (Input IN, inout SurfaceOutputStandard o)
         {
+            
             fixed x = (-0.5 + IN.uv_ForegroundMask.x) * 2;
             fixed y = (-0.5 + IN.uv_ForegroundMask.y) * 2;
 
             fixed radius = sqrt(x * x + y * y);
             clip(radius - _BackgroundCutoff);
-            o.Albedo = _BackgroundColor;
+            o.Albedo = _BackgroundColor+_CosTime*2;
             if (radius > _ForegroundCutoff) {
-                o.Albedo = _ForegroundColor;
+                o.Albedo = _ForegroundColor + _SinTime*2 ;
             }
             o.Alpha = 1;
         }

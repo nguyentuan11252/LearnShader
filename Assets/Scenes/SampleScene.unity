@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3708983, g: 0.37837014, b: 0.35722524, a: 1}
+  m_IndirectSpecularColor: {r: 0.3731193, g: 0.38073996, b: 0.35872698, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1328,7 +1328,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objGrass: {fileID: 8677721100909532974, guid: 2f887c4361bedb641b99757de4fde3ae, type: 3}
-  texture: {fileID: 2800000, guid: 8e1f1b4481c7df84ab6fe6410995a5d1, type: 3}
+  texture: {fileID: 2800000, guid: dccb50c5d442a03479c715b882c81da7, type: 3}
   size: 10
   meshFilter: {fileID: 753071776}
   vert: []
